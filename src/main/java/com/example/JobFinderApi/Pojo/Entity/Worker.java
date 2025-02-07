@@ -40,7 +40,6 @@ public class Worker {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -48,7 +47,6 @@ public class Worker {
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -56,7 +54,6 @@ public class Worker {
     public Address getAddress() {
         return address;
     }
-
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -64,7 +61,6 @@ public class Worker {
     public List<Work> getWork() {
         return work;
     }
-
     public void setWork(List<Work> work) {
         this.work = work;
     }
@@ -72,7 +68,6 @@ public class Worker {
     public List<Bid> getBid() {
         return bid;
     }
-
     public void setBid(List<Bid> bid) {
         this.bid = bid;
     }

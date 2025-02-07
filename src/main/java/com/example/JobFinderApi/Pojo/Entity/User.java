@@ -21,11 +21,9 @@ public class User {
     @JoinColumn(name = "address_id")
     private Address address = new Address();
 
-
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Work> work;
-
 
     public User() {}
 
@@ -37,7 +35,6 @@ public class User {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -45,16 +42,13 @@ public class User {
     public String getUsername() {
         return username;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
 
-
     public List<Work> getWork() {
         return work;
     }
-
     public void setWork(List<Work> work) {
         this.work = work;
     }
@@ -62,7 +56,6 @@ public class User {
     public Address getAddress() {
         return address;
     }
-
     public void setAddress(Address address) {
         this.address = address;
     }

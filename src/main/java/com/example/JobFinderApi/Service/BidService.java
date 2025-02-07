@@ -1,8 +1,6 @@
 package com.example.JobFinderApi.Service;
 
 import com.example.JobFinderApi.Pojo.Entity.Bid;
-import com.example.JobFinderApi.Pojo.Entity.Work;
-import com.example.JobFinderApi.Pojo.Entity.Worker;
 import com.example.JobFinderApi.Pojo.Input.BidInput;
 
 public interface BidService {

@@ -1,7 +1,6 @@
 package com.example.JobFinderApi.Pojo.Entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -44,7 +43,6 @@ public class Bid {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -52,7 +50,6 @@ public class Bid {
     public double getPrice() {
         return price;
     }
-
     public void setPrice(double price) {
         this.price = price;
     }
@@ -60,7 +57,6 @@ public class Bid {
     public Date getCreated_at() {
         return created_at;
     }
-
     public void setCreated_at(Date created_at) {
         this.created_at = created_at;
     }
@@ -68,7 +64,6 @@ public class Bid {
     public Work getWork() {
         return work;
     }
-
     public void setWork(Work work) {
         this.work = work;
     }
@@ -76,7 +71,6 @@ public class Bid {
     public Worker getWorker() {
         return worker;
     }
-
     public void setWorker(Worker worker) {
         this.worker = worker;
     }

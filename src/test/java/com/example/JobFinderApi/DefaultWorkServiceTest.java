@@ -47,11 +47,9 @@ public class DefaultWorkServiceTest {
         User user = new User();
         int userId = 123;
 
-
         when(addressRepository.save(any(Address.class))).thenReturn(address);
         when(userRepository.findUserById(userId)).thenReturn(user);
         when(workRepository.save(any(Work.class))).thenReturn(new Work());
-
 
         workService.saveWork(workInput, userId);
 
@@ -155,7 +153,4 @@ public class DefaultWorkServiceTest {
         assertEquals(workInput.getTitle(), updatedWork.getTitle());
         assertNull(updatedWork.getAddress());
     }
-
-
-
 }

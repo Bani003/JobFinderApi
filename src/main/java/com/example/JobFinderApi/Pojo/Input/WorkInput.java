@@ -7,7 +7,6 @@ public class WorkInput {
     private String title;
     private String description;
     private boolean available;
-
     private Address address;
 
     public WorkInput() {}
@@ -15,7 +14,6 @@ public class WorkInput {
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -23,7 +21,6 @@ public class WorkInput {
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String desc) {
         this.description = desc;
     }
@@ -31,7 +28,6 @@ public class WorkInput {
     public boolean isAvailable() {
         return available;
     }
-
     public void setAvailable(boolean available) {
         this.available = available;
     }
@@ -39,7 +35,6 @@ public class WorkInput {
     public Address getAddress() {
         return address;
     }
-
     public void setAddress(Address address) {
         this.address = address;
     }

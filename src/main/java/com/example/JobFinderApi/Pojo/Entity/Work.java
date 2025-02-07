@@ -42,8 +42,6 @@ public class Work {
     @JsonBackReference
     private Worker worker;
 
-
-
     public Work() {}
 
     public Work(String title, String description, Address address, User user) {
@@ -62,16 +60,13 @@ public class Work {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
 
-
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -79,7 +74,6 @@ public class Work {
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
@@ -87,7 +81,6 @@ public class Work {
     public boolean isIs_available() {
         return is_available;
     }
-
     public void setIs_available(boolean is_available) {
         this.is_available = is_available;
     }
@@ -95,7 +88,6 @@ public class Work {
     public Address getAddress() {
         return address;
     }
-
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -103,7 +95,6 @@ public class Work {
     public User getUser() {
         return user;
     }
-
     public void setUser(User user) {
         this.user = user;
     }
@@ -111,7 +102,6 @@ public class Work {
     public List<Bid> getBid() {
         return bid;
     }
-
     public void setBid(List<Bid> bid) {
         this.bid = bid;
     }
@@ -119,7 +109,6 @@ public class Work {
     public Worker getWorker() {
         return worker;
     }
-
     public void setWorker(Worker worker) {
         this.worker = worker;
     }

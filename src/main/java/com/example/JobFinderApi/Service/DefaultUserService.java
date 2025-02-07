@@ -22,21 +22,18 @@ public class DefaultUserService implements UserService{
         Address address = new Address(userInput.getAddress().getCity(),userInput.getAddress().getCountry());
         addressRepository.save(address);
         User user = new User(userInput.getUsername(), address);
-
         return userRepository.save(user);
     }
 
     @Override
     public User updateUser(UserInput userInput, int user_id) {
         User user = userRepository.findUserById(user_id);
-
         if (userInput.getAddress() != null){
             Address address = new Address(userInput.getAddress().getCity(),userInput.getAddress().getCountry());
             addressRepository.save(address);
             user.setAddress(address);
         }
         user.setUsername(userInput.getUsername());
-
         return userRepository.save(user);
     }
 }

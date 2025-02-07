@@ -1,20 +1,17 @@
 package com.example.JobFinderApi.Pojo.Input;
 
-import com.example.JobFinderApi.Pojo.Entity.Work;
-import com.example.JobFinderApi.Pojo.Entity.Worker;
+import java.time.LocalDateTime;
 
 public class BidInput {
 
     private double price;
+    private LocalDateTime createdAt;
 
-    public BidInput(){}
+    public BidInput() {}
 
-    public double getPrice() {
-        return price;
-    }
+    public double getPrice() {return price;}
+    public void setPrice(double price) {this.price = price;}
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
+    public LocalDateTime getCreatedAt() {return createdAt;}
+    public void setCreatedAt(LocalDateTime createdAt) {this.createdAt = createdAt;}
 }
